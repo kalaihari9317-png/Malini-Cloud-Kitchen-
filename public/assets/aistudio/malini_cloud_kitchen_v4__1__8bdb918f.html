@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ta"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>மாலினி கிளவுடு கிச்சன் | Malini Cloud Kitchen – Woraiyur, Trichy</title>
+<meta name="description" content="சுவையான வீட்டுச் சாப்பாடு – டிபன், மதிய உணவு, வெரைட்டி ரைஸ், ஃபாஸ்ட் ஃபுட். உறையூர், திருச்சி. WhatsApp-ல் ஆர்டர் செய்யுங்கள்: 96007 30095">
+<meta property="og:title" content="மாலினி கிளவுடு கிச்சன் – வீட்டுச் சாப்பாடு">
+<meta property="og:description" content="மெனுவைப் பார்த்து WhatsApp-ல் ஆர்டர் செய்யுங்கள். உறையூர், திருச்சி.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<meta name="theme-color" content="#15362B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&amp;family=Noto+Serif+Tamil:wght@600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FBF6EA;--cream2:#F3EBD8;--green:#15362B;--green2:#1F4D3A;--chili:#C4451C;--gold:#E3A62B;--ink:#1E241F;--mute:#6B7266;--line:#E6DEC8;--white:#fff;--wa:#25A244;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:"Noto Sans Tamil",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-size:16px}
+body.has-bar{padding-bottom:84px}
+img{max-width:100%;display:block}
+a{color:inherit}button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.serif{font-family:"Noto Serif Tamil",serif;font-weight:700}
+h1,h2,h3{margin:0}
+.sr{position:absolute;left:-9999px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid transparent;border-radius:99px;padding:13px 28px;font-weight:600;font-size:16px;text-decoration:none;text-align:center;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn.chili{background:var(--chili);color:#fff}.btn.chili:hover{background:#a93a17}
+.btn.line{border-color:var(--green);color:var(--green);background:transparent}.btn.line:hover{background:var(--green);color:#fff}
+.btn.wa{background:var(--wa);color:#fff}.btn.wa:hover{background:#1e8a39}
+.btn.sm{padding:9px 18px;font-size:14px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* status + header */
+.status{background:#22281F;color:#fff;font-size:13px;text-align:center;padding:7px 12px}
+.status.closed{background:var(--chili)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,246,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .mk{width:44px;height:44px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:19px}
+.logo b{display:block;font-size:22px;color:var(--green);line-height:1.2}
+.logo small{display:block;font-size:10px;letter-spacing:.14em;color:var(--chili);font-weight:600;line-height:1}
+nav.links{display:flex;gap:34px}
+nav.links a{text-decoration:none;font-weight:500;color:var(--mute);padding:6px 0;border-bottom:2px solid transparent}
+nav.links a:hover,nav.links a.on{color:var(--green);border-color:var(--chili)}
+.acts{display:flex;gap:10px;align-items:center}
+.cartbtn{position:relative;border:1.5px solid var(--line);background:var(--white);border-radius:99px;padding:9px 18px;font-weight:600;color:var(--green);font-size:15px}
+.cartbtn .n{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:99px;background:var(--chili);color:#fff;font-size:12px;margin-left:6px;padding:0 6px}
+
+/* hero */
+.hero{padding:40px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.eyebrow{font-size:14px;font-weight:600;color:var(--chili)}
+.hero h1{font-size:clamp(32px,4.4vw,52px);line-height:1.5;color:var(--green);margin:14px 0 18px}
+.hero p.lead{font-size:18px;color:var(--mute);max-width:520px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+.stat b{display:block;font-size:30px;color:var(--green);line-height:1.4}
+.stat span{font-size:13px;color:var(--mute)}
+.visual{position:relative}
+.visual .pic{aspect-ratio:25/26;border-radius:28px;overflow:hidden}
+.float{position:absolute;display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 18px 12px 12px;box-shadow:0 10px 30px rgba(21,54,43,.12)}
+.float.a{left:-28px;top:36px}.float.b{right:24px;bottom:-20px;padding:12px 20px}
+.float .ic{width:40px;height:40px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;font-weight:700}
+.float small{display:block;font-size:12px;color:var(--mute);line-height:1.4}
+.float strong{display:block;color:var(--green);line-height:1.4}
+.float .pr{font-size:20px;color:var(--chili)}
+
+/* photo slots */
+.pic{position:relative;background:#EAD9B3;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover}
+.pic.noimg{background:radial-gradient(circle at 50% 46%,#C98B3C 0 18%,#F7EFD9 18% 36%,transparent 36%),#E9D7B0}
+.pic.noimg::after{content:"படம் இங்கே";position:absolute;left:0;right:0;bottom:10px;text-align:center;font-size:12px;color:var(--mute)}
+
+/* sections */
+section.s{padding:88px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+.head h2{font-size:clamp(28px,3.4vw,40px);line-height:1.5;color:var(--green);margin-top:6px}
+.head .more{font-weight:600;color:var(--green);text-decoration:none}
+.dark{background:var(--green)}
+.dark h2{color:var(--cream)}.dark .eyebrow{color:var(--gold)}
+.dark .note{color:#A9BDB2}
+.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cat{display:flex;flex-direction:column;gap:14px;text-align:left;background:var(--green2);color:var(--cream);border:0;border-radius:18px;padding:24px 20px;transition:transform .15s,background .15s}
+.cat:hover{transform:translateY(-3px);background:#265a45}
+.cat .ic{width:48px;height:48px;border-radius:50%;background:var(--gold);color:var(--green);display:grid;place-items:center;font-size:18px}
+.cat b{font-size:17px;font-weight:600;line-height:1.5;display:block}
+.cat small{font-size:13px;color:#A9BDB2}
+
+/* dish cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.card .pic{aspect-ratio:10/7}
+.card .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .tag{font-size:12px;font-weight:600;color:var(--chili)}
+.card h3{font-size:18px;font-weight:600;color:var(--green);line-height:1.5}
+.card p{margin:0;font-size:13.5px;color:var(--mute);line-height:1.6}
+.card .pr{margin-top:auto;padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card .pr b{font-size:21px;color:var(--chili)}
+.card.out{opacity:.6}.card.out h3{text-decoration:line-through}
+.add{border:0;background:var(--green);color:#fff;font-weight:600;font-size:14px;border-radius:99px;padding:9px 20px}
+.add:hover{background:var(--green2)}
+.qty{display:inline-flex;align-items:center;background:var(--green);color:#fff;border-radius:99px;overflow:hidden}
+.qty button{background:transparent;border:0;color:#fff;font-size:20px;width:38px;height:36px}
+.qty span{min-width:22px;text-align:center;font-weight:700;color:var(--gold)}
+.soldtxt{font-size:13px;font-weight:600;color:var(--chili)}
+
+/* why */
+.why{background:var(--cream2)}
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why .pic{aspect-ratio:26/22;border-radius:28px}
+.why h2{font-size:clamp(26px,3vw,36px);line-height:1.6;color:var(--green);margin:6px 0 28px}
+.pt{display:flex;gap:16px;margin-bottom:22px}
+.pt i{flex:none;width:44px;height:44px;border-radius:50%;background:#F7DDD2;color:var(--chili);display:grid;place-items:center;font-style:normal;font-weight:700}
+.pt b{display:block;font-size:18px;color:var(--green);line-height:1.6}
+.pt span{color:var(--mute);font-size:15px}
+
+/* menu */
+.tools{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:28px}
+.search{flex:1 1 320px;max-width:520px;display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:4px 6px 4px 20px}
+.search input{flex:1;border:0;outline:0;background:transparent;font:inherit;padding:10px 0;min-width:0}
+.search:focus-within{border-color:var(--green)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1.5px solid var(--line);background:#fff;color:var(--green);border-radius:99px;padding:8px 18px;font-weight:600;font-size:14.5px}
+.chip.on{background:var(--green);border-color:var(--green);color:#fff}
+.mcat{margin-top:44px}
+.mcat:first-child{margin-top:0}
+.mcat h3{font-size:26px;color:var(--green);line-height:1.6;display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.mcat h3::after{content:"";flex:1;border-top:2px solid var(--gold)}
+.empty{padding:40px 0;color:var(--mute);text-align:center}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px}
+.step i{width:48px;height:48px;border-radius:50%;background:var(--green);color:var(--gold);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:18px;margin-bottom:14px}
+.step b{display:block;font-size:19px;color:var(--green);line-height:1.6}
+.step span{font-size:14.5px;color:var(--mute);line-height:1.7;display:block;margin-top:4px}
+.sun{display:flex;align-items:center;gap:20px;background:#FFF3CC;border:1px solid var(--gold);border-radius:18px;padding:22px 28px;margin-top:40px}
+.sun b{flex:none;background:var(--gold);color:var(--green);border-radius:99px;padding:6px 16px;font-size:14px}
+
+/* contact */
+.contact{background:var(--cream2)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact h2{font-size:clamp(26px,3vw,34px);line-height:1.6;color:var(--green);margin:6px 0 22px}
+.box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:14px}
+.box b{display:block;color:var(--green)}
+.box p{margin:2px 0 0;color:var(--mute);font-size:15px}
+.mapcard{border-radius:24px;border:1px solid var(--line);background:#DDE5D3;min-height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:24px}
+.mapcard .pin{width:46px;height:46px;border-radius:50%;background:var(--chili);border:6px solid #fff}
+
+footer{background:var(--green);color:#D5E0D9;padding:64px 0 28px}
+footer .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:36px}
+footer h4{margin:0 0 10px;color:var(--gold);font-size:13px}
+footer p,footer li{margin:0 0 6px;font-size:14.5px}
+footer ul{list-style:none;margin:0;padding:0}
+footer .brand b{display:block;font-size:24px;color:var(--cream)}
+footer .copy{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#8FA79B}
+
+/* cart bar + sheet */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--green);color:#fff;padding:12px 0;box-shadow:0 -4px 20px rgba(0,0,0,.2);display:none}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.bar small{display:block;color:#CFE3D4}
+.bar .btn{background:#F2B705;color:#2B2200}
+.back{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none;align-items:flex-end;justify-content:center}
+.back.show{display:flex}
+.sheet{background:var(--cream);width:min(520px,100%);max-height:92vh;overflow:auto;border-radius:22px 22px 0 0;padding:20px}
+.sheet h2{font-size:24px;color:var(--green);margin-bottom:6px}
+.x{float:right;border:0;background:transparent;font-size:30px;line-height:1;color:var(--ink)}
+.ln{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;font-size:15px}
+.ln.t{font-weight:700;border-top:2px solid var(--ink);margin-top:6px;padding-top:12px;font-size:17px}
+.ln.t span:last-child{color:var(--chili)}
+label{display:block;font-weight:600;font-size:13.5px;margin-top:12px}
+input.f,textarea,select{width:100%;padding:11px 12px;border:1px solid #BDB9A2;border-radius:10px;font:inherit;background:#fff;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.err{color:var(--chili);font-size:13.5px;min-height:20px;margin:8px 0 0}
+.fine{font-size:12.5px;color:var(--mute);margin:8px 0 0}
+.empty-cart{color:var(--mute);padding:14px 0}
+
+
+/* settings page */
+#settings{display:none;background:var(--cream);min-height:100vh;padding-bottom:90px}
+.sbar{position:sticky;top:0;z-index:20;background:var(--green);color:#fff;padding:14px 0}
+.sbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.sbar h1{font-size:20px;color:#fff;line-height:1.6}
+.sbar a{color:#F2B705;font-weight:600;text-decoration:none}
+.note2{background:#FFF3CC;border:1px solid var(--gold);border-radius:14px;padding:14px 18px;margin:20px 0;font-size:14.5px}
+.scard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:18px}
+.scard h2{font-size:20px;color:var(--green);margin-bottom:6px;line-height:1.6}
+.scard p{margin:0 0 14px;color:var(--mute);font-size:14.5px}
+details.scard summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:20px;color:var(--green);list-style:none}
+details.scard summary::-webkit-details-marker{display:none}
+details.scard summary small{font-size:13px;color:var(--mute);font-family:"Noto Sans Tamil",sans-serif;font-weight:400}
+.cbar{margin:14px 0}
+.srow{display:grid;grid-template-columns:84px 1fr auto auto auto auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.th{width:84px;height:60px;border-radius:10px}
+.th.noimg::after{display:none}
+.th.big{width:160px;height:120px}
+.srow .nm small{display:block;color:var(--mute);font-size:12px}
+.srow label{display:flex;align-items:center;gap:6px;margin:0;font-size:14px;font-weight:500}
+.srow input[type=number]{width:84px;margin:0;padding:8px}
+.srow input[type=checkbox]{width:auto;margin:0}
+.rm{border:0;background:transparent;color:var(--chili);font-size:18px}
+.two2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pbox{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px 16px}
+.abar{display:flex;gap:12px;flex-wrap:wrap}
+#smsg{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;background:#22281F;color:#fff;border-radius:18px;padding:10px 20px;font-size:14px;z-index:60;display:none;max-width:92%;text-align:center}
+@media (max-width:700px){
+ .srow{grid-template-columns:70px 1fr}.srow>:nth-child(n+3){grid-column:2}
+ .th{width:70px;height:52px}.th.big{width:120px;height:90px}
+ .two2{grid-template-columns:1fr}
+}
+@media (max-width:1000px){
+ .hero .wrap,.why .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+ .cats{grid-template-columns:repeat(3,1fr)}
+ .grid.four,.steps{grid-template-columns:repeat(2,1fr)}
+ nav.links{display:none}
+ .float.a{left:12px}.float.b{right:12px}
+}
+@media (max-width:600px){
+ .wrap{padding:0 16px}
+ section.s{padding:56px 0}
+ .hero{padding:24px 0 56px}
+ header.top .wrap{height:64px}
+ .logo b{font-size:19px}.logo .mk{width:38px;height:38px}
+ .acts .btn{display:none}
+ .cats{grid-template-columns:repeat(2,1fr)}
+ .grid,.grid.four{grid-template-columns:repeat(2,1fr);gap:14px}
+ .card .bd{padding:12px 12px 14px}
+ .card h3{font-size:15px}.card p{font-size:12.5px}
+ .card .pr b{font-size:18px}
+ .add{padding:8px 14px;font-size:13px}.qty button{width:32px}
+ .steps{grid-template-columns:1fr}
+ .sun{flex-direction:column;align-items:flex-start}
+ .stats{gap:12px 28px}
+ .two{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="site">
+<div class="status" id="status">வீட்டுச் சாப்பாடு · உறையூர், திருச்சி</div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" aria-label="மாலினி கிளவுடு கிச்சன்"><span class="mk serif">மா</span><span><b class="serif">மாலினி</b><small>CLOUD KITCHEN</small></span></a>
+  <nav class="links" aria-label="முதன்மை"><a href="#top" class="on">முகப்பு</a><a href="#menu">மெனு</a><a href="#how">ஆர்டர் முறை</a><a href="#contact">தொடர்புக்கு</a></nav>
+  <div class="acts">
+    <button class="cartbtn" onclick="openCart()" aria-label="Cart பார்க்க">Cart<span class="n" id="hcount">0</span></button>
+    <a class="btn chili sm" href="#menu">ஆர்டர் செய்ய</a>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">உறையூர் · திருச்சி · வீட்டுச் சாப்பாடு</div>
+    <h1 class="serif">சுவையான வீட்டுச் சாப்பாடு, உங்கள் வாசல் வரை.</h1>
+    <p class="lead">டிபன், மதிய உணவு, வெரைட்டி ரைஸ், ஃபாஸ்ட் ஃபுட் – மெனுவில் தேர்வு செய்து WhatsApp-ல் எளிதாக ஆர்டர் செய்யுங்கள்.</p>
+    <div class="cta"><a class="btn chili" href="#menu">இப்போது ஆர்டர் செய்ய</a><a class="btn line" href="tel:+919600730095">அழைக்க</a></div>
+    <div class="stats">
+      <div class="stat"><b class="serif" id="stN">35+</b><span>உணவு வகைகள்</span></div>
+      <div class="stat"><b class="serif" id="stMin">₹20</b><span>முதல் விலை</span></div>
+      <div class="stat"><b class="serif" id="stC">6</b><span>மெனு பிரிவுகள்</span></div>
+      <div class="stat"><b class="serif">WhatsApp</b><span>ஆர்டர் முறை</span></div>
+    </div>
+  </div>
+  <div class="visual">
+    <div class="pic" data-img="hero" data-alt="மாலினி கிளவுடு கிச்சன் உணவு"></div>
+    <div class="float a"><span class="ic">W</span><span><small>WhatsApp ஆர்டர்</small><strong>96007 30095</strong></span></div>
+    <div class="float b"><span><small>மதிய உணவு</small><strong class="serif pr">₹120 முதல்</strong></span></div>
+  </div>
+</div></section>
+
+<section class="s dark" id="cats"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">பிரிவுகள்</div><h2 class="serif">இன்று என்ன சாப்பிடலாம்?</h2></div><span class="note">ஆறு பிரிவுகள் · ஒரே மெனு</span></div>
+  <div class="cats" id="catcards"></div>
+</div></section>
+
+<section class="s" id="featured"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">இன்றைய சிறப்பு</div><h2 class="serif">சிறப்பு உணவுகள்</h2></div><a class="more" href="#menu">முழு மெனு பார்க்க →</a></div>
+  <div class="grid four" id="featgrid"></div>
+</div></section>
+
+<section class="s why"><div class="wrap">
+  <div class="pic" data-img="kitchen" data-alt="மாலினி கிளவுடு கிச்சன் சமையலறை"></div>
+  <div>
+    <div class="eyebrow">ஏன் மாலினி?</div>
+    <h2 class="serif">வீட்டுச் சுவை, எளிய ஆர்டர்.</h2>
+    <div class="pt"><i>1</i><div><b>வீட்டுச் சுவை</b><span>டிபன் முதல் மதிய உணவு வரை, வீட்டில் சாப்பிடும் சுவையில்.</span></div></div>
+    <div class="pt"><i>2</i><div><b>எளிய WhatsApp ஆர்டர்</b><span>மெனுவில் தேர்வு செய்து, ஒரே தட்டலில் WhatsApp-ல் அனுப்பலாம்.</span></div></div>
+    <div class="pt"><i>3</i><div><b>நியாயமான விலை</b><span>இட்லி ₹20, வெஜ் மீல்ஸ் ₹120 – மெனுவில் விலை தெளிவாக.</span></div></div>
+  </div>
+</div></section>
+
+<section class="s" id="menu"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">முழு மெனு</div><h2 class="serif">நாங்கள் சமைப்பவை எல்லாம், ஒரே இடத்தில்.</h2></div></div>
+  <div class="tools">
+    <label class="search" for="q"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="உணவைத் தேடுங்கள்…" autocomplete="off"><span class="sr">தேடு</span></label>
+  </div>
+  <div class="chips" id="chips" role="tablist" aria-label="மெனு பிரிவுகள்" style="margin-bottom:32px"></div>
+  <div id="menulist"></div>
+</div></section>
+
+<section class="s" id="how" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">ஆர்டர் முறை</div><h2 class="serif">4 படிகளில் ஆர்டர்</h2></div></div>
+  <div class="steps">
+    <div class="step"><i>1</i><b>மெனுவில் தேர்வு</b><span>பிரிவுகளில் உணவைத் தேர்ந்தெடுத்து “சேர்” அழுத்தவும்.</span></div>
+    <div class="step"><i>2</i><b>Cart சரிபார்க்க</b><span>அளவு, மொத்த தொகையைப் பார்த்து பெயர், முகவரி கொடுக்கவும்.</span></div>
+    <div class="step"><i>3</i><b>WhatsApp-ல் அனுப்ப</b><span>உங்கள் ஆர்டர் செய்தியாக WhatsApp-ல் திறக்கும்.</span></div>
+    <div class="step"><i>4</i><b>உறுதி &amp; Delivery</b><span>எங்கள் பதில் WhatsApp-ல் வந்த பின்பே ஆர்டர் உறுதி.</span></div>
+  </div>
+  <div class="sun"><b>ஞாயிறு ஸ்பெஷல்</b><span>மீன் சாப்பாடு அல்லது நீங்கள் விரும்பிக் கேட்பவை கிடைக்கும். விருப்பம் இருந்தால் முன்னதாகவே போன் செய்து தெரிவிக்கவும்.</span></div>
+</div></section>
+
+<section class="s contact" id="contact"><div class="wrap">
+  <div>
+    <div class="eyebrow">தொடர்புக்கு</div>
+    <h2 class="serif">எங்களை அழைக்க, ஆர்டர் செய்ய</h2>
+    <div class="box"><b>முகவரி</b><p>Kulumani Main Road, Arulnagar, Santhosh Garden, Woraiyur, Trichy – 620003</p></div>
+    <div class="box"><b>ஆர்டர் / தொடர்புக்கு</b><p>84285 09309 · 96007 30095</p></div>
+    <div class="box"><b>Delivery &amp; நேரம்</b><p id="shopinfotxt"></p></div>
+    <div class="cta" style="margin-top:20px">
+      <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/919600730095?text=Vanakkam%20Malini%20Cloud%20Kitchen">WhatsApp-ல் ஆர்டர்</a>
+      <a class="btn line" href="tel:+919600730095">அழைக்க</a>
+    </div>
+  </div>
+  <div class="mapcard">
+    <span class="pin" aria-hidden="true"></span>
+    <b class="serif" style="font-size:22px;color:var(--green)">உறையூர், திருச்சி</b>
+    <span style="color:var(--mute);font-size:15px">Kulumani Main Road, Arulnagar,<br>Santhosh Garden</span>
+    <a class="btn chili sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Kulumani+Main+Road+Arulnagar+Santhosh+Garden+Woraiyur+Trichy+620003">Map பார்க்க</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div class="brand"><b class="serif">மாலினி கிளவுடு கிச்சன்</b><p style="color:var(--gold);font-weight:600;font-size:13px">Malini Cloud Kitchen</p><p>சுவையான வீட்டுச் சாப்பாடு – உறையூர், திருச்சி.</p></div>
+    <div><h4>மெனு</h4><ul id="fcats"></ul></div>
+    <div><h4>தொடர்பு</h4><ul><li>84285 09309</li><li>96007 30095</li><li>WhatsApp ஆர்டர்</li></ul></div>
+    <div><h4>முகவரி</h4><p>Kulumani Main Road, Arulnagar,<br>Woraiyur, Trichy – 620003</p></div>
+  </div>
+  <div class="copy" id="copy">© Malini Cloud Kitchen · Kulumani Main Road, Woraiyur, Trichy – 620003 <span id="fssai"></span></div>
+</div></footer>
+
+<div class="bar" id="bar"><div class="wrap">
+  <div><b id="bcount">0 items</b><small id="btotal">₹0</small></div>
+  <button class="btn" onclick="openCart()">Cart பார்க்க</button>
+</div></div>
+
+<div class="back" id="back" role="dialog" aria-modal="true" aria-label="Cart"><div class="sheet">
+  <button class="x" onclick="closeCart()" aria-label="மூடு">×</button>
+  <h2 class="serif">உங்கள் ஆர்டர்</h2>
+  <div id="citems"></div>
+  <div id="form">
+    <label for="cn">பெயர்</label><input class="f" id="cn" autocomplete="name">
+    <label for="cp">போன் எண்</label><input class="f" id="cp" type="tel" inputmode="numeric" maxlength="10" placeholder="10 இலக்க எண்" autocomplete="tel">
+    <label for="ca">Delivery முகவரி</label><textarea id="ca" rows="2" autocomplete="street-address"></textarea>
+    <div class="two">
+      <div><label for="ct">வேண்டிய நேரம்</label><select id="ct"><option>உடனே</option><option>காலை (7–10)</option><option>மதியம் (12–2)</option><option>மாலை (4–7)</option><option>இரவு (7–10)</option></select></div>
+      <div><label for="cm">பணம் செலுத்தும் முறை</label><select id="cm"><option>Cash on Delivery</option><option>UPI / GPay</option></select></div>
+    </div>
+    <label for="cx">குறிப்பு (விருப்பம்)</label><input class="f" id="cx" placeholder="உதா: காரம் குறைவாக">
+    <div class="err" id="err" role="alert"></div>
+    <button class="btn wa" style="width:100%;margin-top:8px" onclick="sendOrder()">WhatsApp-ல் ஆர்டர் அனுப்ப</button>
+    <p class="fine">WhatsApp திறக்கும்; அனுப்பும் முன் செய்தியைச் சரிபார்க்கலாம். ஆர்டர் உறுதி WhatsApp-ல் பதில் வந்த பின்பே.</p>
+  </div>
+</div></div>
+</div><!-- /site -->
+
+<div id="settings">
+  <div class="sbar"><div class="wrap"><h1 class="serif">⚙ Settings – மாலினி</h1><a href="#top">← வெப்சைட்டுக்குத் திரும்ப</a></div></div>
+  <div class="wrap">
+    <div class="note2"><b>கவனிக்க:</b> இங்கே செய்யும் மாற்றங்கள் இந்த browser-ல் மட்டும் சேமிக்கப்படும். எல்லாம் முடிந்ததும் கீழே <b>“புதிய HTML பதிவிறக்கு”</b> அழுத்தி, வரும் கோப்பை உங்கள் வெப்சைட்டில் மாற்றினால்தான் வாடிக்கையாளர்களுக்குப் படங்கள் தெரியும்.</div>
+    <div id="sbody"></div>
+  </div>
+  <input type="file" id="fpick" accept="image/*" hidden="">
+  <div id="smsg" role="status" aria-live="polite"></div>
+</div>
+
+<script type="application/json" id="siteData">{"photos":{},"cfg":{},"items":{}}</script>
+<script>
+const SRC='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+/* ====== இங்கே மாற்றலாம் (SETTINGS) ====== */
+const CFG={
+  whatsapp:'919600730095',     // ஆர்டர் செல்லும் WhatsApp எண்
+  deliveryFee:0,               // Delivery கட்டணம் (₹)
+  minOrder:0,                  // குறைந்தபட்ச ஆர்டர் (₹) — 0 = இல்லை
+  openHour:null, closeHour:null, // உதா: openHour:7, closeHour:22 (24 மணி நேரம்). null = எப்போதும் திறந்தது
+  upi:'',                      // உதா: 'malini@upi' — நிரப்பினால் UPI ID காட்டும்
+  fssai:'',                    // FSSAI எண் — நிரப்பினால் footer-ல் வரும்
+  areas:'',                    // உதா: 'உறையூர், தில்லை நகர், கே.கே. நகர்'
+  imgFolder:'images/',         // படங்கள் இருக்கும் folder
+  imgExt:'jpg',                // படங்களின் வகை: jpg / jpeg / png / webp
+  featured:['வெஜ் மீல்ஸ்','சிக்கன் நான்-வெஜ் மீல்ஸ்','சிக்கன் ரைஸ்','முட்டை கொத்து புரோட்டா'] // முகப்பில் காட்டும் சிறப்பு உணவுகள்
+};
+/* படம் சேர்க்கும் முறை: images folder-ல் hero.jpg, kitchen.jpg, d01.jpg, d02.jpg ... (photo-list.txt பார்க்கவும்).
+   படம் இல்லையென்றால் தானாக placeholder காட்டும். */
+/* sold:true போட்டால் "இன்று இல்லை" என்று காட்டும் (4-வது மதிப்பு: true) */
+const MENU=[
+{id:'tiffin',t:'டிபன் வகைகள்',g:'டி',i:[
+['இட்லி (2)',20],['தோசை (2)',60,'தேங்காய் பால் + சீனி'],['இடியாப்பம் (3)',50],['பூரி (2 பீஸ்)',60],['பொங்கல்',50],['ஊத்தப்பம் (2 பீஸ்)',60],
+['ஆனியன் ஊத்தப்பம் (1) + நார்மல் தோசை (1)',70],['ஆனியன் ஊத்தப்பம் (1) + நார்மல் ஊத்தப்பம் (1)',70],['முட்டை தோசை (1) + நார்மல் தோசை (1)',80],
+['சப்பாத்தி + குருமா',60],['சிறிய பொடி இட்லி (20 பீஸ்)',60],['முட்டை கொத்து சப்பாத்தி',90],['சிக்கன் கொத்து சப்பாத்தி',120],['முட்டை கொத்து புரோட்டா',80]]},
+{id:'rice',t:'வெரைட்டி ரைஸ்',g:'வ',i:[
+['சாம்பார் சாதம்',60],['தயிர் சாதம்',60],['ரசம் சாதம்',60],['புளியோதரை',60],['லெமன் சாதம்',60],['தக்காளி சாதம்',60],['மல்லி சாதம்',60]]},
+{id:'meals',t:'மதிய உணவு',g:'ம',i:[
+['வெஜ் மீல்ஸ்',120,'750 கிராம் சாதம் + சாம்பார், ரசம், மோர், புளிக்குழம்பு, கூட்டு, பொரியல், அப்பளம், ஊறுகாய்'],
+['சிக்கன் நான்-வெஜ் மீல்ஸ்',150,'750 கிராம் சாதம் + சிக்கன் குழம்பு, ரசம், மோர், அப்பளம், சிக்கன் 65 (100 கிராம்)']]},
+{id:'egg',t:'முட்டை வகைகள்',g:'மு',i:[['ஆம்லெட்',25],['முட்டை பொரியல்',30],['அவித்த முட்டை',20]]},
+{id:'side',t:'சைடு டிஷ்',g:'சை',i:[
+['ஆனியன் பக்கோடா (150 கிராம்)',70],['முகைகேக்ஸ் பக்கோடா (100 கிராம்)',50],['கருப்பு உளுந்து பால் (200 மி.லி)',60],['முட்டை போண்டா (2 பீஸ்)',40],['பெப்பர் சிக்கன்',120]]},
+{id:'fast',t:'Fast Food வகைகள்',g:'F',i:[['சிக்கன் ரைஸ்',100],['எக் ரைஸ்',80],['சிக்கன் நூடுல்ஸ்',100],['எக் நூடுல்ஸ்',80]]}
+];
+const items=[];
+MENU.forEach(c=>c.i.forEach(x=>{const n=items.length;items.push({id:n,key:'d'+String(n+1).padStart(2,'0'),cat:c.id,catName:c.t,name:x[0],price:x[1],desc:x[2]||'',sold:!!x[3]})}));
+
+let cart={};
+try{cart=JSON.parse(localStorage.getItem('mck_cart')||'{}')}catch(e){}
+let fcat='all',fq='';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function save(){try{localStorage.setItem('mck_cart',JSON.stringify(cart))}catch(e){}}
+function isOpen(){if(CFG.openHour==null||CFG.closeHour==null)return true;const h=new Date().getHours();return h>=CFG.openHour&&h<CFG.closeHour}
+function sub(){return items.reduce((s,x)=>s+x.price*(cart[x.id]||0),0)}
+function cnt(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+
+/* photo slots */
+function loadPics(root){
+  (root||document).querySelectorAll('.pic[data-img]:not([data-done])').forEach(p=>{
+    const tok=String(Math.random());p.dataset.done=tok;
+    const src=picSrc(p.dataset.img);
+    if(!src){p.classList.add('noimg');return}
+    p.classList.add('noimg');
+    const img=new Image();img.alt=p.dataset.alt||'';img.decoding='async';if(!p.classList.contains('th'))img.loading='lazy';
+    img.onload=()=>{if(p.dataset.done===tok)p.classList.remove('noimg')};
+    img.onerror=()=>{img.remove()};
+    p.appendChild(img);img.src=src;
+  });
+}
+
+/* controls */
+function ctl(x){const q=cart[x.id]||0;
+  if(x.sold)return '<span class="soldtxt">இன்று இல்லை</span>';
+  return q?`<span class="qty"><button onclick="chg(${x.id},-1)" aria-label="குறை">−</button><span>${q}</span><button onclick="chg(${x.id},1)" aria-label="கூட்டு">+</button></span>`
+          :`<button class="add" onclick="chg(${x.id},1)" aria-label="${esc(x.name)} சேர்">+ சேர்</button>`}
+function card(x,showTag){
+  return `<article class="card${x.sold?' out':''}"><div class="pic" data-img="${x.key}" data-alt="${esc(x.name)}"></div><div class="bd">`
+   +(showTag?`<span class="tag">${esc(x.catName)}</span>`:'')
+   +`<h3>${esc(x.name)}</h3>${x.desc?`<p>${esc(x.desc)}</p>`:''}<div class="pr"><b class="serif">₹${x.price}</b><span class="k" data-k="${x.id}">${ctl(x)}</span></div></div></article>`}
+
+function renderMenu(){
+  const q=fq.trim().toLowerCase();
+  const out=MENU.filter(c=>fcat==='all'||c.id===fcat).map(c=>{
+    const rows=items.filter(x=>x.cat===c.id&&(!q||x.name.toLowerCase().includes(q)||x.desc.toLowerCase().includes(q)));
+    return rows.length?`<div class="mcat" id="c-${c.id}"><h3 class="serif">${c.t}</h3><div class="grid">${rows.map(x=>card(x,false)).join('')}</div></div>`:''}).join('');
+  $('menulist').innerHTML=out||'<p class="empty">தேடிய உணவு கிடைக்கவில்லை. வேறு பெயரில் தேடுங்கள் அல்லது போன் / WhatsApp செய்யவும்.</p>';
+  loadPics($('menulist'));
+}
+function renderChips(){
+  $('chips').innerHTML=[{id:'all',t:'எல்லாம்'}].concat(MENU).map(c=>`<button class="chip${fcat===c.id?' on':''}" role="tab" aria-selected="${fcat===c.id}" onclick="setCat('${c.id}')">${c.t}</button>`).join('')}
+function setCat(id){fcat=id;renderChips();renderMenu()}
+function goCat(id){setCat(id);$('menu').scrollIntoView({behavior:'smooth'})}
+
+function renderStatic(){
+  $('catcards').innerHTML=MENU.map(c=>`<button class="cat" onclick="goCat('${c.id}')"><span class="ic serif">${c.g}</span><span><b>${c.t}</b><small>${c.i.length} உணவுகள்</small></span></button>`).join('');
+  const feat=CFG.featured.map(n=>items.find(x=>x.name===n)).filter(Boolean);
+  $('featgrid').innerHTML=feat.map(x=>card(x,true)).join('');
+  $('stN').textContent=items.length+'+';$('stC').textContent=MENU.length;$('stMin').textContent='₹'+Math.min(...items.map(x=>x.price));
+  $('fcats').innerHTML=MENU.map(c=>`<li>${c.t}</li>`).join('');
+  loadPics();
+}
+
+function refresh(){
+  document.querySelectorAll('.k').forEach(el=>{el.innerHTML=ctl(items[+el.dataset.k])});
+  const n=cnt();
+  $('hcount').textContent=n;
+  $('bcount').textContent=n+' item'+(n==1?'':'s');$('btotal').textContent='₹'+sub();
+  $('bar').style.display=n?'block':'none';document.body.classList.toggle('has-bar',n>0);
+  if($('back').classList.contains('show'))cartView();
+}
+function chg(id,n){const q=(cart[id]||0)+n;if(q<=0)delete cart[id];else cart[id]=Math.min(q,50);save();refresh()}
+
+function cartView(){
+  const rows=items.filter(x=>cart[x.id]);const s=sub();const fee=rows.length?CFG.deliveryFee:0;
+  $('citems').innerHTML=rows.length?rows.map(x=>`<div class="ln"><span>${esc(x.name)}<br><span class="qty" style="margin-top:4px"><button onclick="chg(${x.id},-1)" aria-label="குறை">−</button><span>${cart[x.id]}</span><button onclick="chg(${x.id},1)" aria-label="கூட்டு">+</button></span></span><b>₹${x.price*cart[x.id]}</b></div>`).join('')
+   +(fee?`<div class="ln"><span>Delivery கட்டணம்</span><b>₹${fee}</b></div>`:'')+`<div class="ln t"><span>மொத்தம்</span><span>₹${s+fee}</span></div>`
+   +(CFG.minOrder&&s<CFG.minOrder?`<div class="err">குறைந்தபட்ச ஆர்டர் ₹${CFG.minOrder} (இன்னும் ₹${CFG.minOrder-s} தேவை)</div>`:''):'<p class="empty-cart">Cart காலியாக உள்ளது. மெனுவில் உணவைச் சேர்க்கவும்.</p>';
+  $('form').style.display=rows.length?'block':'none'}
+function openCart(){cartView();$('err').textContent='';$('back').classList.add('show')}
+function closeCart(){$('back').classList.remove('show')}
+$('back').addEventListener('click',e=>{if(e.target.id==='back')closeCart()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
+
+function sendOrder(){
+  const rows=items.filter(x=>cart[x.id]);const e=$('err');
+  if(!rows.length){e.textContent='Cart காலியாக உள்ளது.';return}
+  if(!isOpen()){e.textContent='இப்போது கடை மூடப்பட்டுள்ளது. திறக்கும் நேரத்தில் ஆர்டர் செய்யவும்.';return}
+  const s=sub();if(CFG.minOrder&&s<CFG.minOrder){e.textContent='குறைந்தபட்ச ஆர்டர் ₹'+CFG.minOrder;return}
+  const n=$('cn').value.trim(),p=$('cp').value.replace(/\D/g,''),a=$('ca').value.trim();
+  if(!n){e.textContent='பெயரை உள்ளிடவும்.';$('cn').focus();return}
+  if(p.length!==10){e.textContent='சரியான 10 இலக்க போன் எண்ணை உள்ளிடவும்.';$('cp').focus();return}
+  if(!a){e.textContent='Delivery முகவரியை உள்ளிடவும்.';$('ca').focus();return}
+  e.textContent='';const fee=CFG.deliveryFee;
+  const L=['*புதிய ஆர்டர் – Malini Cloud Kitchen*',''];
+  rows.forEach(x=>L.push('• '+x.name+' × '+cart[x.id]+' = ₹'+x.price*cart[x.id]));
+  L.push('');if(fee)L.push('Delivery: ₹'+fee);
+  L.push('*மொத்தம்: ₹'+(s+fee)+'*','','பெயர்: '+n,'போன்: '+p,'முகவரி: '+a,'நேரம்: '+$('ct').value,'பணம்: '+$('cm').value);
+  const x=$('cx').value.trim();if(x)L.push('குறிப்பு: '+x);
+  window.open('https://wa.me/'+CFG.whatsapp+'?text='+encodeURIComponent(L.join('\n')),'_blank');
+}
+
+$('q').addEventListener('input',e=>{fq=e.target.value;renderMenu()});
+
+/* ===== store: படங்கள் + settings (IndexedDB + HTML-ல் பதிக்கப்பட்ட data) ===== */
+const idb={db:null,
+ open(){return new Promise(res=>{try{const r=indexedDB.open('mck',1);r.onupgradeneeded=()=>r.result.createObjectStore('kv');r.onsuccess=()=>{idb.db=r.result;res()};r.onerror=()=>res()}catch(e){res()}})},
+ get(k){return new Promise(res=>{if(!idb.db)return res(null);try{const q=idb.db.transaction('kv').objectStore('kv').get(k);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null)}catch(e){res(null)}})},
+ set(k,v){return new Promise(res=>{if(!idb.db)return res();try{const t=idb.db.transaction('kv','readwrite');t.objectStore('kv').put(v,k);t.oncomplete=()=>res();t.onerror=()=>res()}catch(e){res()}})}};
+let store={photos:{},cfg:{},items:{}};
+function picSrc(key){const v=store.photos[key];if(v)return v;if(v==='')return null;return CFG.imgFolder+key+'.'+CFG.imgExt}
+function persist(){return idb.set('store',store)}
+
+function applyStore(){
+  Object.assign(CFG,store.cfg);
+  items.forEach(x=>{const o=store.items[x.key];if(o){if(o.price!=null)x.price=o.price;if(o.sold!=null)x.sold=!!o.sold}});
+}
+function applyInfo(){
+  const t=[];if(CFG.openHour!=null&&CFG.closeHour!=null)t.push('நேரம்: '+CFG.openHour+':00 – '+CFG.closeHour+':00');if(CFG.areas)t.push('Delivery பகுதிகள்: '+esc(CFG.areas));
+  t.push(CFG.deliveryFee?'Delivery கட்டணம்: ₹'+CFG.deliveryFee:'Delivery விவரங்களுக்கு போன் / WhatsApp செய்யவும்.');if(CFG.minOrder)t.push('குறைந்தபட்ச ஆர்டர்: ₹'+CFG.minOrder);if(CFG.upi)t.push('UPI: '+esc(CFG.upi));
+  $('shopinfotxt').innerHTML=t.join('<br>');
+  $('fssai').textContent=CFG.fssai?'· FSSAI: '+CFG.fssai:'';
+  const st=$('status');
+  if(!isOpen()){st.textContent='இப்போது கடை மூடப்பட்டுள்ளது · நேரம்: '+CFG.openHour+':00 – '+CFG.closeHour+':00';st.className='status closed'}
+  else{st.textContent='வீட்டுச் சாப்பாடு · உறையூர், திருச்சி';st.className='status'}
+}
+function fullRender(){
+  document.querySelectorAll('.pic[data-img]').forEach(p=>{p.removeAttribute('data-done');p.classList.remove('noimg');p.querySelectorAll('img').forEach(i=>i.remove())});
+  renderStatic();renderChips();renderMenu();refresh();applyInfo();
+}
+
+/* ===== Settings பக்கம் ===== */
+let pickMode=null;
+function smsg(t){const m=$('smsg');m.textContent=t;m.style.display='block';clearTimeout(smsg.t);smsg.t=setTimeout(()=>{m.style.display='none'},3500+t.length*40)}
+function shrink(file,max){return new Promise((res,rej)=>{
+  const url=URL.createObjectURL(file),im=new Image();
+  im.onload=()=>{let w=im.naturalWidth,h=im.naturalHeight;const k=Math.min(1,max/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
+    const c=document.createElement('canvas');c.width=w;c.height=h;const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,w,h);g.drawImage(im,0,0,w,h);
+    URL.revokeObjectURL(url);res(c.toDataURL('image/jpeg',.8))};
+  im.onerror=()=>{URL.revokeObjectURL(url);rej()};im.src=url})}
+const normName=s=>s.toLowerCase().replace(/\.[^.]+$/,'').replace(/[\s_\-()+.]/g,'');
+async function handleFiles(files,m){
+  smsg('படங்களைச் சுருக்கி ஏற்றுகிறது… காத்திருக்கவும்');
+  const nat=(a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true});
+  let ok=0;const bad=[];
+  const put=async(key,f)=>{try{store.photos[key]=await shrink(f,(key==='hero'||key==='kitchen')?1200:900);ok++}catch(e){bad.push(f.name)}};
+  if(m.type==='one'){await put(m.key,files[0])}
+  else if(m.type==='cat'){
+    files.sort(nat);const rows=items.filter(x=>x.cat===m.cat);let tg=rows.filter(x=>!store.photos[x.key]);if(!tg.length)tg=rows;
+    for(let i=0;i<files.length;i++){if(i<tg.length)await put(tg[i].key,files[i]);else bad.push(files[i].name+' (இடம் இல்லை)')}
+  }else{
+    for(const f of files){
+      const base=f.name.replace(/\.[^.]+$/,'').toLowerCase().trim();let key=null;
+      if(base==='hero'||base==='kitchen')key=base;
+      else if(/^d\d{2}$/.test(base)&&items.some(x=>x.key===base))key=base;
+      else{const it=items.find(x=>normName(x.name)===normName(f.name));if(it)key=it.key}
+      if(key)await put(key,f);else bad.push(f.name)}
+  }
+  await persist();renderSettings();
+  smsg(ok+' படங்கள் சேர்க்கப்பட்டன'+(bad.length?' · பொருந்தாதவை: '+bad.join(', '):''));
+}
+function pick(m,multi){pickMode=m;const f=$('fpick');f.multiple=!!multi;f.value='';f.click()}
+function renderSettings(){
+  const root=$('sbody');
+  const openIds=[...root.querySelectorAll('details[open]')].map(d=>d.id);
+  let h=`<div class="scard"><h2 class="serif">1. எல்லாப் படங்களும் ஒரே நேரத்தில்</h2><p>படங்களின் பெயரை <b>hero</b>, <b>kitchen</b>, <b>d01 … d35</b> அல்லது <b>உணவின் பெயர்</b> என்று வைத்திருந்தால் தானாகப் பொருந்திவிடும் (photo-list.txt பார்க்கவும்). எல்லாவற்றையும் ஒரே முறை தேர்வு செய்யுங்கள்.</p><button class="btn chili" data-act="bulk">படங்களைத் தேர்வு செய்ய (பல)</button></div>`;
+  h+=`<div class="scard"><h2 class="serif">2. முகப்புப் படங்கள்</h2><div class="two2">`
+   +[['hero','முகப்புப் பெரிய படம்'],['kitchen','“ஏன் மாலினி” படம்']].map(([k,t])=>`<div class="pbox"><div class="pic th big" data-img="${k}"></div><div><b>${t}</b><br><button class="btn line sm" style="margin-top:8px" data-act="one" data-key="${k}">படம் மாற்ற</button> <button class="rm" data-act="rm" data-key="${k}" aria-label="நீக்கு">✕</button></div></div>`).join('')+`</div></div>`;
+  h+=`<div class="scard" style="padding-bottom:6px"><h2 class="serif">3. உணவுகள் – படம், விலை, இருப்பு</h2><p>ஒரு பிரிவைத் திறந்து “பல படங்கள் (வரிசையாக)” அழுத்தினால், படம் இல்லாத உணவுகளுக்குப் படங்கள் பெயர் வரிசையில் போடப்படும். தவறினால் அந்த உணவின் “படம்” பொத்தானால் மாற்றலாம்.</p></div>`;
+  MENU.forEach(c=>{const rows=items.filter(x=>x.cat===c.id);
+    h+=`<details class="scard" id="sd-${c.id}"${openIds.includes('sd-'+c.id)?' open':''}><summary><span class="serif">${c.t}</span><small>${rows.length} உணவுகள்</small></summary><div class="cbar"><button class="btn line sm" data-act="cat" data-cat="${c.id}">பல படங்கள் (வரிசையாக)</button></div>`
+    +rows.map(x=>`<div class="srow"><div class="pic th" data-img="${x.key}"></div><div class="nm"><b>${esc(x.name)}</b><small>${x.key}</small></div><label>₹<input class="f" type="number" min="0" data-price="${x.key}" value="${x.price}" aria-label="விலை"></label><label><input type="checkbox" data-sold="${x.key}"${x.sold?' checked':''}> இன்று இல்லை</label><button class="btn line sm" data-act="one" data-key="${x.key}">படம்</button><button class="rm" data-act="rm" data-key="${x.key}" aria-label="படத்தை நீக்கு">✕</button></div>`).join('')+`</details>`});
+  const F=[['whatsapp','WhatsApp எண் (91 உடன்)','text'],['deliveryFee','Delivery கட்டணம் ₹','number'],['minOrder','குறைந்தபட்ச ஆர்டர் ₹','number'],['openHour','திறக்கும் மணி (0–23)','number'],['closeHour','மூடும் மணி (1–24)','number'],['areas','Delivery பகுதிகள்','text'],['upi','UPI ID','text'],['fssai','FSSAI எண்','text']];
+  h+=`<div class="scard"><h2 class="serif">4. கடை விவரங்கள்</h2><p>திறக்கும் / மூடும் மணியை நிரப்பினால், மூடிய நேரத்தில் ஆர்டர் தடுக்கப்படும். காலியாக விட்டால் எப்போதும் திறந்திருக்கும்.</p><div class="fgrid">`
+   +F.map(([k,l,t])=>`<div><label for="cf-${k}">${l}</label><input class="f" id="cf-${k}" type="${t}" data-cfg="${k}" value="${CFG[k]==null?'':esc(CFG[k])}"></div>`).join('')+`</div></div>`;
+  h+=`<div class="scard"><h2 class="serif">5. சேமித்து வெளியிட</h2><p>படங்கள் சேர்த்து முடித்ததும் புதிய HTML-ஐப் பதிவிறக்கி, உங்கள் வெப்சைட்டில் பழைய கோப்புக்குப் பதிலாக வையுங்கள். படங்கள் அந்தக் கோப்புக்குள்ளேயே இருக்கும்; தனி images folder தேவையில்லை.</p><div class="abar"><button class="btn chili" data-act="export">புதிய HTML பதிவிறக்கு</button><button class="btn line" data-act="reset">இந்த browser-ல் உள்ள மாற்றங்களை அழி</button></div></div>`;
+  root.innerHTML=h;loadPics(root);
+}
+function exportHTML(){
+  const open=['<script type="application/','json" id="siteData">'].join('');
+  const i=SRC.indexOf(open);
+  if(i<0){smsg('பதிவிறக்க முடியவில்லை. பக்கத்தை refresh செய்து மீண்டும் முயலவும்.');return}
+  const j=SRC.indexOf('<'+'/script>',i);
+  const json=JSON.stringify({photos:store.photos,cfg:store.cfg,items:store.items}).replace(/</g,'\\u003c');
+  const out=SRC.slice(0,i+open.length)+json+SRC.slice(j);
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([out],{type:'text/html'}));a.download='malini_cloud_kitchen_v4.html';document.body.appendChild(a);a.click();a.remove();
+  smsg('பதிவிறக்கம் தொடங்கியது ('+Math.round(out.length/1024/1024*10)/10+' MB). இந்தக் கோப்பை உங்கள் வெப்சைட்டில் மாற்றுங்கள்.');
+}
+$('sbody').addEventListener('click',e=>{
+  const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act;
+  if(a==='bulk')pick({type:'bulk'},true);
+  else if(a==='one')pick({type:'one',key:b.dataset.key},false);
+  else if(a==='cat')pick({type:'cat',cat:b.dataset.cat},true);
+  else if(a==='rm'){store.photos[b.dataset.key]='';persist().then(()=>{renderSettings();smsg('படம் நீக்கப்பட்டது.')})}
+  else if(a==='export')exportHTML();
+  else if(a==='reset'){if(confirm('இந்த browser-ல் சேமித்த படங்கள், விலைகள், settings அனைத்தும் அழியும் (HTML-ல் ஏற்கெனவே பதிந்தவை இருக்கும்). தொடரலாமா?'))idb.set('store',null).then(()=>location.reload())}
+});
+$('sbody').addEventListener('change',e=>{
+  const t=e.target;
+  if(t.dataset.price){const it=items.find(x=>x.key===t.dataset.price);const v=Math.max(0,parseInt(t.value)||0);t.value=v;it.price=v;(store.items[it.key]=store.items[it.key]||{}).price=v;persist();smsg('சேமிக்கப்பட்டது')}
+  else if(t.dataset.sold){const it=items.find(x=>x.key===t.dataset.sold);it.sold=t.checked;(store.items[it.key]=store.items[it.key]||{}).sold=t.checked;persist();smsg('சேமிக்கப்பட்டது')}
+  else if(t.dataset.cfg){const k=t.dataset.cfg;let v=t.value.trim();
+    if(k==='deliveryFee'||k==='minOrder')v=Math.max(0,parseInt(v)||0);
+    else if(k==='openHour'||k==='closeHour')v=v===''?null:Math.min(24,Math.max(0,parseInt(v)||0));
+    CFG[k]=v;store.cfg[k]=v;persist();smsg('சேமிக்கப்பட்டது')}
+});
+$('fpick').addEventListener('change',e=>{const f=[...e.target.files];if(f.length&&pickMode)handleFiles(f,pickMode)});
+
+/* பக்க மாற்றம்: #settings = Settings பக்கம் */
+let wasSettings=false;
+function route(){
+  const s=location.hash==='#settings';
+  $('site').style.display=s?'none':'';$('settings').style.display=s?'block':'none';
+  if(s){renderSettings();window.scrollTo(0,0)}else if(wasSettings){fullRender()}
+  wasSettings=s;
+}
+window.addEventListener('hashchange',route);
+/* footer © வரியை 5 முறை தட்டினால் Settings திறக்கும் */
+(function(){let n=0,t;$('copy').addEventListener('click',()=>{n++;clearTimeout(t);t=setTimeout(()=>{n=0},2500);if(n>=5){n=0;location.hash='#settings'}})})();
+
+/* init */
+(async function(){
+  let emb={};try{emb=JSON.parse($('siteData').textContent||'{}')}catch(e){}
+  await idb.open();
+  const loc=await idb.get('store')||{};
+  store={photos:Object.assign({},emb.photos,loc.photos),cfg:Object.assign({},emb.cfg,loc.cfg),items:Object.assign({},emb.items,loc.items)};
+  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+  applyStore();fullRender();
+  if(location.hash==='#settings')route();
+})();
+</script></body></html>

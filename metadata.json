@@ -1,0 +1,6 @@
+{
+  "name": "மாலினி கிளவுடு கிச்சன் | Malini Cloud Kitchen",
+  "description": "சுவையான வீட்டுச் சாப்பாடு – டிபன், மதிய உணவு, வெரைட்டி ரைஸ், ஃபாஸ்ட் ஃபுட். உறையூர், திருச்சி. WhatsApp-ல் ஆர்டர் செய்யுங்கள்: 96007 30095",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

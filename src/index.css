@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cream: #FBF6EA;
+    --cream2: #F3EBD8;
+    --green: #15362B;
+    --green2: #1F4D3A;
+    --chili: #C4451C;
+    --gold: #E3A62B;
+    --ink: #1E241F;
+    --mute: #4A5246;
+    --line: #E2D8C0;
+    --white: #FFFFFF;
+    --wa: #1E8A39;
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    font-family: "Noto Sans Tamil", system-ui, -apple-system, sans-serif;
+    background-color: var(--cream);
+    color: var(--ink);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  *:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+}
+
+.font-serif-tamil {
+  font-family: "Noto Serif Tamil", Georgia, serif;
+}
+
+.font-sans-tamil {
+  font-family: "Noto Sans Tamil", system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", "Noto Sans Tamil", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-fade-in {
+  animation: menuFadeIn 190ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
